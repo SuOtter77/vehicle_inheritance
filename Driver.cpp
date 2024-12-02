@@ -4,6 +4,7 @@
 #include "Car.h"
 #include "Truck.h"
 using namespace std;
+//driver driver drvier
 
 int main() {
 	// temporary vars.
@@ -17,17 +18,17 @@ int main() {
 	cout << "Vehicle:\n";
 	
 	cout << "Enter the manufacturer: ";
-	getline(cin, manu);
+	getline(cin, manu); // transfer input to temporary var
 	cout << "Enter the year built: ";
 	cin >> year;
-	Vehicle vehicle(manu, year);
+	Vehicle vehicle(manu, year); // put temporary vars into the vehicle
 	cout << "Vehicle Information:\n";
-	vehicle.displayInfo();
+	vehicle.displayInfo(); // display what was already entered as a showcase
 	cout << endl;
 	
 	cout << "Car:\n";
 	cout << "Enter the manufacturer: ";
-	cin.ignore();
+	cin.ignore(); // stop last sin from interfering with the righteousness of Getline
 	getline(cin, manu);
 	cout << "Enter the year built: ";
 	cin >> year;
@@ -36,20 +37,20 @@ int main() {
 	Car car(manu, year, doors);
 	cout << "Vehicle Information:\n";
 	car.displayInfo();
-	cout << endl;
+	cout << endl; // enhance readability
 
 	cout << "Truck:\n";
 	cout << "Enter the manufacturer: ";
-	cin.ignore();
+	cin.ignore();// stop last sin from interfering with the righteousness of Getline
 	getline(cin, manu);
 	cout << "Enter the year built: ";
 	cin >> year;
 	cout << "Enter the towing capacity: ";
 	cin >> cap;
 	Truck truck(manu, year, cap);
-	cout << "Vehicle Information:\n";
+	cout << "Vehicle Information:\n"; // display vehicle info???
 	truck.displayInfo();
-	cout << endl;
+	cout << endl;//prettier end to the program
 	
 	return 0;
 }

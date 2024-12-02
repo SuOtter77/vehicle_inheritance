@@ -7,7 +7,7 @@ class Car : public Vehicle {
 	int numDoors;
 public:
 	Car(std::string manufacturerName, int year, int numberDoors);
-	int getNumDoors();
+	int getNumDoors(); // getter!s
 	void displayInfo(); // call Vehicle displayInfo
 };
 
