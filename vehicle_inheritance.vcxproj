@@ -137,6 +137,9 @@
     <ClCompile Include="Truck.cpp" />
     <ClCompile Include="Vehicle.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\OneDrive - Sinclair Community College\Desktop\FALL 24\C++\terminal_output Screenshot 2024-12-01 225050.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
